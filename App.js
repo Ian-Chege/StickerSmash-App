@@ -3,6 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Platform } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
+//import * as SplashScreen from 'expo-splash-screen';
+
 import Button from './components/Button';
 import ImageViewer from './components/ImageViewer';
 import CircleButton from './components/CircleButton';
@@ -19,6 +21,9 @@ import {captureRef} from 'react-native-view-shot';
 import domtoimage from 'dom-to-image';
 
 const PlaceholderImage = require('./assets/images/background-image.png');
+
+// SplashScreen.preventAutoHideAsync();
+// setTimeout(SplashScreen.hideAsync, 5000);
 
 export default function App() {
   const [pickedEmoji, setPickedEmoji] = useState(null);
